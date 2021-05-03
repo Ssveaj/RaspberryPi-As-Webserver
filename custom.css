@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+body {	
+   height: 100vh;
+   background-color: #020024;
+}
+#showWeather {
+  height: 100vh;
+}
+
+/*****************************************************/
+.flexbox-weather {
+  height: 50vh;
+}
+.flexbox-temp {
+  height: 50vh;
+  font-size: 3rem;
+  color: white;
+  font-family: 'Comic Neue', cursive;
+}
+.flexbox-clock { 
+  margin-top: 2rem;
+  color: white;
+  font-size: 11rem;
+  font-family: 'Comic Neue', cursive;
+}
+.flexbox-date {
+  margin-top: -2rem;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Comic Neue', cursive;
+}
+.flexbox-description {
+  color: white;
+  font-family: 'Comic Neue', cursive;
+  font-size: 2rem;
+}
+.flexbox-details {
+ margin-left: 2rem;
+ margin-bottom: 1rem;
+ color: white;
+ font-family: 'Comic Neue', cursive;
+}
+.flexbox-details p {
+  font-size: 1rem;
+  margin: 0px;
+  padding: 0px;
+}
+/************ Byter olika färger vid varje 20 sekunder ************************/
+
+#changeColor {
+  animation-name: changecolor;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+@keyframes changecolor {
+  0%   {background-color: #020024; }
+  25%  {background-color: #A51D02; }
+  50%  {background-color: #720C68; }
+  75%  {background-color: #025E0B; }
+  100% {background-color: #020024; }
+}
