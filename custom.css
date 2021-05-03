@@ -46,7 +46,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
-/************ Byter olika färger vid varje 20 sekunder ************************/
+/************************************/
 
 #changeColor {
   animation-name: changecolor;
